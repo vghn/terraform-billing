@@ -18,4 +18,3 @@ variable "account" {
   description = "The account name"
   default     = "Main"
 }
-
