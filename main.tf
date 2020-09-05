@@ -1,7 +1,3 @@
-terraform {
-  required_version = ">= 0.12"
-}
-
 resource "aws_cloudwatch_metric_alarm" "billing" {
   count               = length(var.thresholds)
   alarm_name          = "${var.account} Billing Alert ($ ${var.thresholds[count.index]})"
